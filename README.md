@@ -19,10 +19,10 @@ Focused on Saudi Arabian, Gulf, Indian, and international regulatory frameworks.
 
 | # | Section | What it contains |
 |---|---|---|
-| 1 | [Study Notes](#1-study-notes) | 11-module GRC curriculum + TryHackMe governance notes |
-| 2 | [Advisory Portfolio](#2-advisory-portfolio) | 5 client engagements across India & Saudi Arabia, GRC Analyst → Auditor |
-| 3 | [GRC Tooling](#3-compliance-tooling) | PDPL PII scanner, IAM audit engine, Islamic fintech GRC framework |
-| 4 | [AI Governance](#4-ai-governance) | AI-GRC research paper + interactive compliance checker for Saudi/Gulf |
+| 1 | [Study Notes](#1-study-notes) | 13-module GRC curriculum + TryHackMe governance notes |
+| 2 | [Advisory Portfolio](#2-advisory-portfolio) | 6 engagements across 5 clients in India & Saudi Arabia, GRC Analyst → Auditor |
+| 3 | [GRC Tooling](#3-grc-tooling) | PDPL PII scanner, IAM audit engine, Islamic fintech GRC framework, ServiceNow IRM implementation |
+| 4 | [AI Governance](#4-ai-governance) | AI-GRC research paper, interactive compliance checker, and AI GRC Audit Suite for Saudi/Gulf |
 
 ---
 
@@ -31,13 +31,14 @@ Focused on Saudi Arabian, Gulf, Indian, and international regulatory frameworks.
 | Domain | Frameworks |
 |---|---|
 | Information Security | ISO/IEC 27001:2022 |
-| Cybersecurity | NIST CSF, NCA ECC-1:2018, NCA ECC-2:2024 |
+| Cybersecurity | NIST CSF, NCA ECC-1:2018, NCA ECC-2:2024, NCA CCC-2:2024, NCA NCNICC-1:2025 |
 | Financial Sector | SAMA CSF, CMA |
 | Privacy | GDPR, India DPDP Act 2023, Saudi PDPL |
 | Trust & Compliance | SOC 2 (TSC) |
 | AI Governance | ISO/IEC 42001:2023, NIST AI RMF, SDAIA AI Ethics, EU AI Act |
 | Islamic Finance | AAOIFI Shariah Standards |
 | Risk | ISO 31000, NIST SP 800-30, OCTAVE, FAIR |
+| GRC Platforms | ServiceNow IRM |
 
 ---
 
@@ -45,7 +46,7 @@ Focused on Saudi Arabian, Gulf, Indian, and international regulatory frameworks.
 
 ### **[grc-notes](https://github.com/kayShahbaaz/grc-notes)**
 
-An 11-module GRC curriculum written from the perspective of a practising GRC Analyst — not theory for its own sake, but how frameworks, regulations, and risk methodology actually work in real organizational environments.
+A 13-module GRC curriculum written from the perspective of a practising GRC Analyst — not theory for its own sake, but how frameworks, regulations, and risk methodology actually work in real organisational environments. Each module includes structured notes, practical application guidance, and a cheatsheet.
 
 | Module | Topic | Domain |
 |---|---|---|
@@ -55,13 +56,16 @@ An 11-module GRC curriculum written from the perspective of a practising GRC Ana
 | 3 | SOC 2 — five Trust Service Criteria, Type 1 vs Type 2 distinction, audit process, what auditors actually test | Trust & Compliance |
 | 4 | GDPR + India DPDP Act — principles, lawful bases, eight data subject rights, DPDP Act 2023, direct comparison of where the two laws align and diverge | Privacy |
 | 5 | NCA ECC — Saudi mandatory cybersecurity baseline, five domains, 114 controls, maturity model, relation to ISO 27001 | Saudi Cybersecurity |
-| 6 | SAMA CSF — Saudi financial sector framework, four domains, maturity model, annual self-assessment cycle, interaction with NCA ECC | Saudi Banking Security |
-| 7 | Saudi PDPL — principles, lawful bases, data subject rights, breach notification, Privacy Officer role, comparison with GDPR | Saudi Privacy |
-| 8 | ISO 42001 — AI management system standard, AI-specific risk (bias, fairness, model drift, human oversight), what AI governance work looks like in practice | AI Governance |
-| 9 | Risk Assessment Methods — qualitative vs quantitative, ALE/SLE/ARO formulas, NIST SP 800-30, ISO 31000, OCTAVE, FAIR, building a risk matrix, running an assessment end to end | Risk |
-| 10 | GRC Tools — enterprise platforms (Archer, ServiceNow GRC, MetricStream), compliance automation (Vanta, Drata, Sprinto, Secureframe), agentic AI shift in compliance tooling (2025–2026) | Practical Skills |
+| 6 | NCA CCC — Saudi cloud-specific cybersecurity framework, verified against CCC-2:2024, CSP/CST split, four domains and 24 subdomains, Annex A data classification, what changed from CCC-1:2020 | Saudi Cloud Security |
+| 7 | SAMA CSF — Saudi financial sector framework, four domains, maturity model, annual self-assessment cycle, interaction with NCA ECC | Saudi Banking Security |
+| 8 | Saudi PDPL — principles, lawful bases, data subject rights, breach notification, Privacy Officer role, comparison with GDPR | Saudi Privacy |
+| 9 | NCNICC-1:2025 — NCA's first mandatory cybersecurity framework for the non-CNI private sector, Category A vs Category B classification (size-based thresholds: 250 employees / 200M SAR), all 3 components and 22 sub-components, key controls including Saudization, MFA, Haseen platform, and NCA incident reporting obligations | Saudi Private Sector Cybersecurity |
+| 10 | ISO 42001 — the world's first AI management system standard, AI-specific risk (bias, fairness, model drift, human oversight), what AI governance work looks like in practice | AI Governance |
+| 11 | Risk Assessment Methods — qualitative vs quantitative, ALE/SLE/ARO formulas, NIST SP 800-30, ISO 31000, OCTAVE, FAIR, building a risk matrix, running an assessment end to end | Risk |
+| 12 | GRC Tools — enterprise platform ServiceNow GRC, supporting tools, and the 2025–2026 shift toward agentic AI in compliance tooling | Practical Skills |
 
 ---
+
 ### **[thm-governance-and-regulation](https://github.com/kayShahbaaz/thm-governance-and-regulation)**
 
 Structured study notes from the TryHackMe Governance & Regulation room covering governance frameworks, documentation hierarchy (policies → standards → procedures → guidelines → baselines), and the regulatory landscape across GDPR, HIPAA, and PCI-DSS.
@@ -72,20 +76,46 @@ Structured study notes from the TryHackMe Governance & Regulation room covering 
 
 ### **[resolute-compliance-advisory](https://github.com/kayShahbaaz/resolute-compliance-advisory) — GRC Advisory Portfolio**
 
-Five client engagements delivered through Resolute Compliance Advisory LLP across two years, demonstrating full progression from GRC Analyst (implementation) to GRC Auditor (independent assurance). All client names anonymised. Engagements span Indian and Saudi regulatory frameworks.
+Six engagements with five clients delivered through Resolute Compliance Advisory LLP across three years, demonstrating full progression from GRC Analyst (implementation) to GRC Auditor (independent assurance). All client names anonymised. Engagements span Indian and Saudi regulatory frameworks.
 
 | Engagement | Industry | Frameworks | Role | Key Finding |
 |---|---|---|---|---|
 | Brightpath | IT Services, Bengaluru | ISO 27001:2022 + SOC 2 | GRC Analyst | 37.6% ISO conformance (35/93 controls); former employee credentials live — Critical risk |
 | Medlink | Healthtech, Mumbai | ISO 27001:2022 + GDPR + India DPDP Act | GRC Analyst | 49.5% ISO conformance; hardcoded AWS credentials in production — Critical risk; no GDPR Article 28 DPAs |
-| Projects 3, 4, 3C | Saudi sectors (insurance, healthcare) | NCA ECC-1:2018, NCA ECC-2:2024, SAMA CSF | GRC Auditor | Independent audit and assurance across Saudi NCA regulatory framework |
+| Al Ameen Insurance | Insurance, Riyadh | NCA ECC-1:2018 + SAMA CSF | GRC Auditor | 29.0% ECC conformance (33/114 controls); SAMA CSF maturity 1.6/4.0; shared Oracle admin credentials on production — Critical risk |
+| Rawabi Health Services | Healthcare, Jeddah | NCA ECC-1:2018 + Saudi PDPL | GRC Auditor | 36.0% ECC conformance (41/114); uncontrolled vendor remote access into live HIS — Critical risk; 2 of 10 PDPL obligations met |
+| Al Ameen Insurance *(returning)* | Insurance, Riyadh | NCA ECC-2:2024 + NCA CCC + SAMA CSF | GRC Auditor | ECC-2:2024 delta assessment; conformance improved to 39% (+10pp); 11 new delta gaps including mandatory NCA CCC gap for Azure KSA workloads |
+| Wasl Logistics | Logistics, Riyadh | NCA NCNICC-1:2025 + ServiceNow IRM | GRC Auditor | 46.2% NCNICC conformance (30/65 controls); vendor access to production via shared credentials with no MFA — Critical risk; full ServiceNow IRM implementation delivered |
 
-Deliverables per engagement include: engagement letter, gap assessment report, Statement of Applicability, risk register, remediation roadmap with Gantt chart and dashboard, executive summary — all formatted as client-facing professional documents.
+Deliverables per engagement include: engagement letter, fieldwork checklist, gap assessment or audit findings report, risk register, corrective action plan or remediation roadmap, and executive summary — all formatted as client-facing professional documents.
 
 ---
 
 ## 3. GRC Tooling
 
+### **[servicenow-irm-implementation-saudi-grc](https://github.com/kayShahbaaz/servicenow-irm-implementation-saudi-grc) — ServiceNow IRM: Saudi Regulatory GRC Implementation**
+
+A full end-to-end ServiceNow Integrated Risk Management (IRM) implementation scoped to the Saudi Arabian regulatory and international compliance landscape, built on a Personal Developer Instance (PDI). Every record was configured from scratch — frameworks loaded citation by citation, policies mapped to real control objectives, risks scored using a quantitative model, and a live executive dashboard assembled across all layers.
+
+Seven authority documents loaded as the foundation, covering the complete Saudi regulatory stack plus international standards:
+
+| Framework | Citations | Load Method |
+|---|---|---|
+| NCA ECC-2:2024 | Manual build (domain → subdomain → control) | Manual |
+| NCA CCC-2:2024 | Manual build (domain → subdomain → control) | Manual |
+| NCA NCNICC-1:2025 | 61 citations | CSV import |
+| SAMA CSF | 89 citations | CSV import |
+| Saudi PDPL | 84 citations | CSV import |
+| ISO/IEC 27001:2022 | 198 citations | CSV import |
+| ISO/IEC 42001:2023 | 48 citations | CSV import |
+
+**Total: 579 citations across 7 frameworks**
+
+Built across six phases: regulatory frameworks loaded as authority documents → 7 policies and 21 control objectives mapped to each framework → risk register with 7 risk statements scored using the quantitative SLE × ARO = ALE model → 23 controls assessed across all frameworks → 4 reports and an executive GRC dashboard aggregating all views. NCA ECC and NCA CCC were built manually — every domain, subdomain, and control entered directly into ServiceNow — to demonstrate full platform depth beyond CSV import.
+
+Demonstrates the ability to load and manage all seven Saudi regulatory frameworks inside a single GRC platform, maintain full policy-to-citation traceability, score risks quantitatively, run compliance assessments, and deliver executive-level reporting — the core skill set for a ServiceNow IRM implementation engagement in the Saudi market.
+
+---
 
 ### **[pdpl-pii-scanner](https://github.com/kayShahbaaz/pdpl-pii-scanner) — Saudi PDPL Compliance Tool**
 
@@ -138,8 +168,8 @@ Frameworks: SAMA CSF, CMA, Saudi PDPL, AAOIFI Shariah Standards. Fully interacti
 
 ---
 
-## 4. AI Governance
 
+## 4. AI Governance
 
 ### **[aigrc-imf](https://github.com/kayShahbaaz/aigrc-imf) — AI-GRC Integrated Management Framework**
 
@@ -158,7 +188,24 @@ Frameworks: ISO/IEC 27001:2022, ISO/IEC 42001:2023, Saudi PDPL, SDAIA AI Ethics,
 
 ### **[aigrc-audit-suite](https://github.com/kayShahbaaz/aigrc-audit-suite) — AI GRC Audit Suite**
 
-Work in progress — details will be added on completion.
+An AI-powered audit toolkit for the Saudi Arabia and Gulf compliance market, built for GRC auditors and consultants who need to produce professional deliverables faster — without enterprise tool price tags. Built on Streamlit with Groq as the LLM backend and a RAG pipeline for document-based gap assessment.
+
+Seven AI-powered modules covering the full audit lifecycle:
+
+| Module | Output | What it generates |
+|---|---|---|
+| 1. Policy Generator | DOCX + PDF | Complete numbered-clause policies mapped to Saudi frameworks |
+| 2. Risk Register | Excel | Colour-coded risk register with threat mapping and control references |
+| 3. Audit Checklist | Excel | Evidence-requirements checklist with audit methods, ready for fieldwork |
+| 4. Gap Assessment | DOCX + PDF | RAG pipeline — AI reads client documents and assesses each control |
+| 5. Vendor Risk | DOCX + PDF | Risk score, red flags, contract clauses, due diligence checklist |
+| 6. IR Playbook | DOCX + PDF | Response team, timeline, escalation matrix, regulatory deadlines |
+| 7. Audit Report | PDF | Final board-ready report with findings, scores, and recommendations |
+
+Phase 1 covers eight Saudi frameworks: NCA ECC, NCA CCC, NCA CSCC, SAMA CSF, SAMA BCM, SDAIA PDPL, CITC, and Vision 2030 digital transformation requirements. The gap assessment module (Module 4) uses a local RAG pipeline — client documents are chunked, embedded using HuggingFace `all-mpnet-base-v2`, stored in ChromaDB, and retrieved per control for AI assessment — with client documents processed locally and only small relevant excerpts sent to the model. Phase 2 (UAE) and Phase 3 (India) are on the roadmap.
+
+Frameworks: NCA ECC, NCA CCC, NCA CSCC, SAMA CSF, SAMA BCM, SDAIA PDPL, CITC, Vision 2030.
+[Live demo](https://aigrc-audit-suite.streamlit.app)
 
 ---
 
